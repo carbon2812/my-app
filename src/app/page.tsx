@@ -177,6 +177,7 @@ export default function Home() {
       <section id="home" className="pt-16 relative min-h-screen flex items-center hero-modern">
         <div className="absolute inset-0 bg-gradient-to-r from-teal-600 via-blue-600 to-purple-600 opacity-90 animate-gradient"></div>
         <div className="absolute inset-0 bg-black opacity-30"></div>
+        <div className="absolute inset-0 bg-cover bg-center bg-no-repeat" style={{backgroundImage: "url('https://images.unsplash.com/photo-1509391366360-2e959784a276?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80')"}}></div>
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="text-white animate-fadeInLeft">
@@ -199,7 +200,7 @@ export default function Home() {
             </div>
             <div className="hidden lg:block animate-fadeInRight">
               <div className="relative animate-float">
-                <div className="w-full h-96 bg-gradient-to-br from-blue-400 to-blue-600 rounded-3xl shadow-modern-lg"></div>
+                <div className="w-full h-96 bg-cover bg-center rounded-3xl shadow-modern-lg" style={{backgroundImage: "url('https://images.unsplash.com/photo-1466611653911-95081537e5b7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80')"}}></div>
                 <div className="absolute inset-0 bg-gradient-to-br from-transparent to-black opacity-20 rounded-3xl"></div>
               </div>
             </div>
@@ -388,7 +389,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="relative animate-fadeInLeft">
-              <div className="w-full h-96 bg-gradient-to-br from-blue-400 to-blue-600 rounded-3xl shadow-modern-lg animate-float"></div>
+              <div className="w-full h-96 bg-cover bg-center rounded-3xl shadow-modern-lg animate-float" style={{backgroundImage: "url('https://images.unsplash.com/photo-1497435334941-8c899ee9e8e9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2074&q=80')"}}></div>
               <div className="absolute inset-0 bg-gradient-to-br from-transparent to-black opacity-20 rounded-3xl"></div>
             </div>
             <div className="animate-fadeInRight">
@@ -461,12 +462,7 @@ export default function Home() {
           <div className="grid md:grid-cols-3 gap-8">
             {/* On Grid */}
             <div className="bg-white p-8 rounded-2xl shadow-sm card-hover">
-              <div className="w-16 h-16 bg-green-500 rounded-xl flex items-center justify-center mb-6">
-                <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
-                </svg>
-              </div>
+              <div className="w-full h-48 bg-cover bg-center rounded-xl mb-6" style={{backgroundImage: "url('https://images.unsplash.com/photo-1509391366360-2e959784a276?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80')"}}></div>
               <h3 className="text-2xl font-bold text-gray-900 mb-4">On Grid Solutions</h3>
               <p className="text-gray-600 mb-6">
                 Our on-grid solar solutions let you generate clean energy while staying connected to the utility grid. With net metering, you can export excess power and save significantly on electricity bills. Ideal for homes and businesses with consistent grid supply.
@@ -481,11 +477,7 @@ export default function Home() {
 
             {/* Off Grid */}
             <div className="bg-white p-8 rounded-2xl shadow-sm card-hover">
-              <div className="w-16 h-16 bg-green-100 rounded-xl flex items-center justify-center mb-6">
-                <svg className="w-8 h-8 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
-                </svg>
-              </div>
+              <div className="w-full h-48 bg-cover bg-center rounded-xl mb-6" style={{backgroundImage: "url('https://images.unsplash.com/photo-1497435334941-8c899ee9e8e9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2074&q=80')"}}></div>
               <h3 className="text-2xl font-bold text-gray-900 mb-4">Off Grid Solutions</h3>
               <p className="text-gray-600 mb-6">
                 Off-grid solar systems give you complete energy independence by storing solar power in batteries for 24/7 use. Perfect for remote locations or areas with frequent power cuts, they ensure an uninterrupted electricity supply. Say goodbye to dependency on the main grid.
@@ -500,11 +492,7 @@ export default function Home() {
 
             {/* Hybrid */}
             <div className="bg-white p-8 rounded-2xl shadow-sm card-hover">
-              <div className="w-16 h-16 bg-green-100 rounded-xl flex items-center justify-center mb-6">
-                <svg className="w-8 h-8 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
-                </svg>
-              </div>
+              <div className="w-full h-48 bg-cover bg-center rounded-xl mb-6" style={{backgroundImage: "url('https://images.unsplash.com/photo-1466611653911-95081537e5b7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80')"}}></div>
               <h3 className="text-2xl font-bold text-gray-900 mb-4">Hybrid Solutions</h3>
               <p className="text-gray-600 mb-6">
                 Hybrid solar systems combine the benefits of on-grid and off-grid technology. Store excess energy in batteries for backup while still enjoying grid connectivity when required. A reliable and cost-effective solution to ensure power even during outages.

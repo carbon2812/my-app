@@ -12,7 +12,7 @@ export default function TestimonialsPage() {
       location: "Delhi",
       rating: 5,
       text: "We are thrilled with our decision to go solar with FORCDYNO SOLAR. Their expertise and customer service were top-notch, and the entire process was seamless. Our electricity bills have reduced by 85% and we couldn't be happier!",
-      image: "👨‍💼",
+      image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
       system: "5kW Residential System"
     },
     {
@@ -20,7 +20,7 @@ export default function TestimonialsPage() {
       location: "Mumbai",
       rating: 5,
       text: "We were initially unsure about switching to solar, but FORCDYNO SOLAR made the whole process so easy. Their team provided clear guidance every step of the way. The installation was completed on time and the system is working perfectly.",
-      image: "👨‍💻",
+      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
       system: "8kW Commercial System"
     },
     {
@@ -28,7 +28,7 @@ export default function TestimonialsPage() {
       location: "Bangalore",
       rating: 5,
       text: "We're so grateful to FORCDYNO SOLAR for providing us with such a high-quality solar system. They were dedicated to ensuring that we were completely satisfied with the installation. The after-sales service is excellent too.",
-      image: "👩‍🏫",
+      image: "https://images.unsplash.com/photo-1494790108755-2616b612b786?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
       system: "6kW Residential System"
     },
     {
@@ -36,7 +36,7 @@ export default function TestimonialsPage() {
       location: "Pune",
       rating: 5,
       text: "The team at FORCDYNO SOLAR is simply outstanding. From consultation to installation, everything was handled professionally. Our solar system has exceeded our expectations and we're saving significantly on our energy bills.",
-      image: "👨‍🔬",
+      image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
       system: "10kW Industrial System"
     },
     {
@@ -44,7 +44,7 @@ export default function TestimonialsPage() {
       location: "Chennai",
       rating: 5,
       text: "I was impressed by the quality of service and the efficiency of the solar panels. FORCDYNO SOLAR delivered exactly what they promised. The system has been running flawlessly for over a year now.",
-      image: "👩‍⚕️",
+      image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
       system: "4kW Residential System"
     },
     {
@@ -52,7 +52,7 @@ export default function TestimonialsPage() {
       location: "Hyderabad",
       rating: 5,
       text: "Excellent work by FORCDYNO SOLAR! They understood our requirements perfectly and delivered a customized solution. The installation team was professional and the system is performing beyond our expectations.",
-      image: "👨‍💼",
+      image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
       system: "12kW Commercial System"
     }
   ];
@@ -143,7 +143,7 @@ export default function TestimonialsPage() {
           <div className="card-modern p-12 mb-12 animate-fadeInUp">
             <div className="grid lg:grid-cols-3 gap-8 items-center">
               <div className="text-center lg:text-left">
-                <div className="text-8xl mb-4">{testimonials[activeTestimonial].image}</div>
+                <div className="w-24 h-24 bg-cover bg-center rounded-full mx-auto mb-6" style={{backgroundImage: `url('${testimonials[activeTestimonial].image}')`}}></div>
                 <h3 className="text-2xl font-bold text-gray-900 mb-2">{testimonials[activeTestimonial].name}</h3>
                 <p className="text-gray-600 mb-2">{testimonials[activeTestimonial].location}</p>
                 <p className="text-green-600 font-semibold">{testimonials[activeTestimonial].system}</p>
@@ -183,7 +183,7 @@ export default function TestimonialsPage() {
                 index === 1 || index === 2 ? 'bg-gradient-to-br from-green-50 to-emerald-50' : ''
               }`}>
                 <div className="text-center mb-6">
-                  <div className="text-4xl mb-3">{testimonial.image}</div>
+                  <div className="w-16 h-16 bg-cover bg-center rounded-full mx-auto mb-3" style={{backgroundImage: `url('${testimonial.image}')`}}></div>
                   <h3 className="text-lg font-bold text-gray-900 mb-1">{testimonial.name}</h3>
                   <p className="text-gray-600 text-sm mb-2">{testimonial.location}</p>
                   <p className="text-green-600 font-semibold text-sm mb-3">{testimonial.system}</p>

@@ -86,7 +86,7 @@ export default function AboutPage() {
             </div>
             <div className="animate-fadeInRight">
               <div className="relative">
-                <div className="w-full h-96 bg-gradient-to-br from-blue-400 to-blue-600 rounded-3xl shadow-modern-lg animate-float"></div>
+                <div className="w-full h-96 bg-cover bg-center rounded-3xl shadow-modern-lg animate-float" style={{backgroundImage: "url('https://images.unsplash.com/photo-1497435334941-8c899ee9e8e9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2074&q=80')"}}></div>
                 <div className="absolute inset-0 bg-gradient-to-br from-transparent to-black opacity-20 rounded-3xl"></div>
               </div>
             </div>

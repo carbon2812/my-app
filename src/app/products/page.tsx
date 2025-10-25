@@ -13,14 +13,14 @@ export default function ProductsPage() {
         description: "Perfect for homes and apartments. Reduce your electricity bills by up to 90% with our high-efficiency residential solar systems.",
         features: ["3kW to 10kW capacity", "25-year warranty", "Net metering compatible", "Easy installation"],
         price: "Starting from ₹1,50,000",
-        image: "🏠"
+        image: "https://images.unsplash.com/photo-1509391366360-2e959784a276?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
       },
       {
         name: "Rooftop Solar Systems",
         description: "Maximize your rooftop space with our custom-designed solar panel installations.",
         features: ["Custom sizing", "Weather resistant", "Low maintenance", "High efficiency"],
         price: "Starting from ₹2,00,000",
-        image: "🏘️"
+        image: "https://images.unsplash.com/photo-1497435334941-8c899ee9e8e9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2074&q=80"
       }
     ],
     commercial: [
@@ -29,14 +29,14 @@ export default function ProductsPage() {
         description: "Power your business with clean, reliable energy. Reduce operational costs and boost your sustainability goals.",
         features: ["10kW to 500kW capacity", "Business-grade warranty", "ROI optimization", "24/7 monitoring"],
         price: "Starting from ₹5,00,000",
-        image: "🏢"
+        image: "https://images.unsplash.com/photo-1466611653911-95081537e5b7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
       },
       {
         name: "Office Building Systems",
         description: "Comprehensive solar solutions for office buildings and corporate facilities.",
         features: ["Scalable design", "Energy management", "Tax benefits", "Green certification"],
         price: "Starting from ₹8,00,000",
-        image: "🏬"
+        image: "https://images.unsplash.com/photo-1509391366360-2e959784a276?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
       }
     ],
     housing: [
@@ -45,14 +45,14 @@ export default function ProductsPage() {
         description: "Community solar solutions for housing societies and residential complexes.",
         features: ["Shared infrastructure", "Cost distribution", "Community benefits", "Bulk discounts"],
         price: "Starting from ₹15,00,000",
-        image: "🏘️"
+        image: "https://images.unsplash.com/photo-1497435334941-8c899ee9e8e9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2074&q=80"
       },
       {
         name: "Apartment Complex Systems",
         description: "Centralized solar power systems for apartment buildings and complexes.",
         features: ["Centralized control", "Individual metering", "Common area power", "Maintenance included"],
         price: "Starting from ₹20,00,000",
-        image: "🏢"
+        image: "https://images.unsplash.com/photo-1466611653911-95081537e5b7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
       }
     ],
     industrial: [
@@ -61,14 +61,14 @@ export default function ProductsPage() {
         description: "Large-scale solar power plants for industrial facilities and manufacturing units.",
         features: ["500kW to 5MW capacity", "Industrial grade", "Custom engineering", "Performance guarantee"],
         price: "Starting from ₹50,00,000",
-        image: "🏭"
+        image: "https://images.unsplash.com/photo-1509391366360-2e959784a276?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
       },
       {
         name: "Manufacturing Unit Systems",
         description: "Heavy-duty solar solutions designed for manufacturing and industrial operations.",
         features: ["High power output", "Durability", "Efficiency optimization", "Maintenance support"],
         price: "Starting from ₹75,00,000",
-        image: "⚙️"
+        image: "https://images.unsplash.com/photo-1497435334941-8c899ee9e8e9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2074&q=80"
       }
     ],
     "ground-mounted": [
@@ -77,14 +77,14 @@ export default function ProductsPage() {
         description: "Large-scale ground-mounted solar installations for maximum energy production.",
         features: ["1MW to 10MW capacity", "Land optimization", "Tracking systems", "Grid integration"],
         price: "Starting from ₹1,00,00,000",
-        image: "🌾"
+        image: "https://images.unsplash.com/photo-1466611653911-95081537e5b7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
       },
       {
         name: "Solar Power Plants",
         description: "Utility-scale solar power plants for commercial and industrial applications.",
         features: ["10MW+ capacity", "Professional installation", "Long-term contracts", "Performance monitoring"],
         price: "Starting from ₹10,00,00,000",
-        image: "⚡"
+        image: "https://images.unsplash.com/photo-1509391366360-2e959784a276?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
       }
     ]
   };
@@ -172,7 +172,7 @@ export default function ProductsPage() {
             {products[activeTab as keyof typeof products].map((product, index) => (
               <div key={index} className="card-modern p-8 animate-fadeInUp">
                 <div className="flex items-start space-x-6">
-                  <div className="text-6xl">{product.image}</div>
+                  <div className="w-24 h-24 bg-cover bg-center rounded-xl" style={{backgroundImage: `url('${product.image}')`}}></div>
                   <div className="flex-1">
                     <h3 className="text-2xl font-bold text-gray-900 mb-4">{product.name}</h3>
                     <p className="text-gray-600 mb-6 leading-relaxed">{product.description}</p>

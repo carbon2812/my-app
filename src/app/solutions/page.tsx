@@ -29,7 +29,7 @@ export default function SolutionsPage() {
       ],
       idealFor: "Homes and businesses with consistent grid supply",
       capacity: "1kW to 500kW",
-      image: "⚡"
+      image: "https://images.unsplash.com/photo-1509391366360-2e959784a276?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
     },
     'off-grid': {
       title: "Off Grid Solar Solutions",
@@ -53,7 +53,7 @@ export default function SolutionsPage() {
       ],
       idealFor: "Remote locations or areas with frequent power cuts",
       capacity: "1kW to 100kW",
-      image: "🔋"
+      image: "https://images.unsplash.com/photo-1497435334941-8c899ee9e8e9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2074&q=80"
     },
     'hybrid': {
       title: "Hybrid Solar Solutions",
@@ -77,7 +77,7 @@ export default function SolutionsPage() {
       ],
       idealFor: "Areas with unreliable grid supply",
       capacity: "3kW to 200kW",
-      image: "🔄"
+      image: "https://images.unsplash.com/photo-1466611653911-95081537e5b7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
     }
   };
 
@@ -163,7 +163,7 @@ export default function SolutionsPage() {
           <div className="card-modern p-12 animate-fadeInUp">
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               <div>
-                <div className="text-8xl mb-6">{solutions[activeSolution as keyof typeof solutions].image}</div>
+                <div className="w-full h-64 bg-cover bg-center rounded-xl mb-6" style={{backgroundImage: `url('${solutions[activeSolution as keyof typeof solutions].image}')`}}></div>
                 <h3 className="text-4xl font-bold text-gray-900 mb-4">
                   {solutions[activeSolution as keyof typeof solutions].title}
                 </h3>
