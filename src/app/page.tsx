@@ -78,8 +78,32 @@ export default function Home() {
       </section>
 
       {/* Bar Running */}
-      <section className="py-6 animate-gradient marquee-container" style={{backgroundColor: '#EEFEF8'}}>
+      <section className="py-8 animate-gradient marquee-container" style={{backgroundColor: ''}}>
         <div className="marquee-content">
+          {/* First set of logos */}
+          <div className="marquee-item flex items-center justify-center">
+            <img src="/logos/Waaree-logo.png" alt="Waaree Solar" className="h-8 w-auto mx-4" />
+          </div>
+          <div className="marquee-item flex items-center justify-center">
+            <img src="/logos/tata-power-solar-logo.jpg" alt="Tata Power Solar" className="h-8 w-auto mx-4" />
+          </div>
+          <div className="marquee-item flex items-center justify-center">
+            <img src="/logos/LuminousLogoBlue.webp" alt="Luminous Solar" className="h-8 w-auto mx-4" />
+          </div>
+          <div className="marquee-item flex items-center justify-center">
+            <img src="/logos/sunora-logo-1.png" alt="Sunora Solar" className="h-8 w-auto mx-4" />
+          </div>
+          <div className="marquee-item flex items-center justify-center">
+            <img src="/logos/logoSolar.png" alt="Solar Logo" className="h-8 w-auto mx-4" />
+          </div>
+          <div className="marquee-item flex items-center justify-center">
+            <img src="/logos/images.png" alt="Solar Partner" className="h-8 w-auto mx-4" />
+          </div>
+          <div className="marquee-item flex items-center justify-center">
+            <img src="/logos/Untitled-design.png" alt="Solar Partner" className="h-8 w-auto mx-4" />
+          </div>
+          
+          {/* Duplicate set for seamless loop */}
           <div className="marquee-item flex items-center justify-center">
             <img src="/logos/Waaree-logo.png" alt="Waaree Solar" className="h-8 w-auto mx-4" />
           </div>

@@ -119,10 +119,10 @@ body {
 
 @keyframes marquee {
   0% {
-    transform: translateX(100%);
+    transform: translateX(0%);
   }
   100% {
-    transform: translateX(-100%);
+    transform: translateX(-50%);
   }
 }
 
@@ -159,8 +159,9 @@ body {
 
 .marquee-content {
   display: flex;
-  animation: marquee 25s linear infinite;
+  animation: marquee 30s linear infinite;
   will-change: transform;
+  width: 200%;
 }
 
 .marquee-item {
@@ -172,7 +173,7 @@ body {
 }
 
 .marquee-item img {
-  filter: brightness(0) invert(1);
+  filter: brightness(0);
   opacity: 0.9;
   transition: opacity 0.3s ease;
 }
