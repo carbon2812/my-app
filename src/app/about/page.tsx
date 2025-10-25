@@ -1,43 +1,13 @@
 'use client';
 
 import Link from 'next/link';
+import Navbar from '../../components/Navbar';
+import Footer from '../../components/Footer';
 
 export default function AboutPage() {
   return (
     <div className="min-h-screen bg-white text-modern">
-      {/* Navigation */}
-      <nav className="nav-modern fixed w-full top-0 z-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-between items-center h-16">
-            <div className="flex items-center">
-              <Link href="/" className="flex items-center">
-                <img 
-                  src="/Hariom Trader's.png Logo Transparent.png" 
-                  alt="Hariom Traders Logo" 
-                  className="h-12 w-auto"
-                />
-              </Link>
-            </div>
-            
-            <div className="hidden lg:block">
-              <div className="ml-10 flex items-baseline space-x-6">
-                <Link href="/" className="text-gray-700 hover:text-green-600 px-3 py-2 rounded-md text-sm font-medium">Home</Link>
-                <Link href="/about" className="text-gray-900 hover:text-green-600 px-3 py-2 rounded-md text-sm font-medium">About Us</Link>
-                <Link href="/products" className="text-gray-700 hover:text-green-600 px-3 py-2 rounded-md text-sm font-medium">Products</Link>
-                <Link href="/solutions" className="text-gray-700 hover:text-green-600 px-3 py-2 rounded-md text-sm font-medium">Solutions</Link>
-                <Link href="/testimonials" className="text-gray-700 hover:text-green-600 px-3 py-2 rounded-md text-sm font-medium">Testimonials</Link>
-                <Link href="/contact" className="text-gray-700 hover:text-green-600 px-3 py-2 rounded-md text-sm font-medium">Contact</Link>
-              </div>
-            </div>
-
-            <div className="hidden lg:block">
-              <Link href="/contact" className="btn-modern text-sm">
-                Get Free Quote
-              </Link>
-            </div>
-          </div>
-        </div>
-      </nav>
+      <Navbar />
 
       {/* Hero Section */}
       <section className="pt-24 pb-20 hero-modern" style={{backgroundColor: '#4CB4F0'}}>
@@ -229,8 +199,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Footer */}
-      <footer className="bg-gray-900 text-white py-12">
+      <Footer />
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-4 gap-8">
             <div className="md:col-span-1">
