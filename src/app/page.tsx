@@ -78,7 +78,7 @@ export default function Home() {
       </section>
 
       {/* Bar Running */}
-      <section className="py-8 animate-gradient marquee-container" style={{backgroundColor: ''}}>
+      <section className="py-6 animate-gradient marquee-container" style={{backgroundColor: ''}}>
         <div className="marquee-content">
           {/* First set of logos */}
           <div className="marquee-item flex items-center justify-center">
