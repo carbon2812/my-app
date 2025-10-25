@@ -96,7 +96,13 @@ export default function ProductsPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center">
-              <Link href="/" className="text-2xl font-bold gradient-text">HARIOM TRADERS</Link>
+              <Link href="/" className="flex items-center">
+                <img 
+                  src="/Hariom Trader's.png Logo Transparent.png" 
+                  alt="Hariom Traders Logo" 
+                  className="h-12 w-auto"
+                />
+              </Link>
             </div>
             
             <div className="hidden lg:block">
@@ -120,7 +126,7 @@ export default function ProductsPage() {
       </nav>
 
       {/* Hero Section */}
-      <section className="pt-24 pb-20 hero-modern">
+      <section className="pt-24 pb-20 hero-modern" style={{backgroundColor: '#4CB4F0'}}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <div className="inline-flex items-center px-6 py-3 glass rounded-full text-sm font-medium mb-8 animate-pulse-slow">
@@ -287,12 +293,14 @@ export default function ProductsPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-4 gap-8">
             <div className="md:col-span-1">
-              <div className="flex items-center mb-4">
-                <div className="w-8 h-8 bg-green-500 rounded-lg flex items-center justify-center mr-3">
-                  <span className="text-white font-bold text-sm">H</span>
-                </div>
-                <h3 className="text-xl font-bold">HARIOM TRADERS</h3>
-              </div>
+                  <div className="flex items-center mb-4">
+                    <img 
+                      src="/Hariom Trader's.png Logo Transparent.png" 
+                      alt="Hariom Traders Logo" 
+                      className="h-8 w-auto mr-3"
+                    />
+                    <h3 className="text-xl font-bold">HARIOM TRADERS</h3>
+                  </div>
               <p className="text-gray-400 mb-6">
                 We're dedicated to helping you harness the power of the sun to create a sustainable future.
               </p>

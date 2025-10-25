@@ -2,7 +2,11 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #171717;
+  --foreground: #2A2A2A;
+  --primary-red: #E33120;
+  --secondary-red: #B51E15;
+  --sky-blue: #4CB4F0;
+  --white: #FFFFFF;
 }
 
 @theme inline {
@@ -37,12 +41,12 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: linear-gradient(135deg, #10b981, #3b82f6);
+  background: linear-gradient(135deg, #E33120, #4CB4F0);
   border-radius: 3px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: linear-gradient(135deg, #059669, #2563eb);
+  background: linear-gradient(135deg, #B51E15, #4CB4F0);
 }
 
 /* Smooth transitions for all interactive elements */
@@ -162,6 +166,19 @@ body {
 .marquee-item {
   flex-shrink: 0;
   padding: 0 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.marquee-item img {
+  filter: brightness(0) invert(1);
+  opacity: 0.9;
+  transition: opacity 0.3s ease;
+}
+
+.marquee-item img:hover {
+  opacity: 1;
 }
 
 .animate-fadeInUp {
@@ -210,7 +227,7 @@ body {
 
 /* Modern gradient text */
 .gradient-text {
-  background: linear-gradient(135deg, #10b981, #3b82f6, #8b5cf6);
+  background: linear-gradient(135deg, #E33120, #4CB4F0, #B51E15);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -222,19 +239,19 @@ body {
 .btn-modern {
   position: relative;
   overflow: hidden;
-  background: linear-gradient(135deg, #10b981, #059669);
+  background: linear-gradient(135deg, #E33120, #B51E15);
   border: none;
   border-radius: 12px;
   padding: 12px 24px;
   color: white;
   font-weight: 600;
   transition: all 0.3s ease;
-  box-shadow: 0 4px 15px rgba(16, 185, 129, 0.3);
+  box-shadow: 0 4px 15px rgba(227, 49, 32, 0.3);
 }
 
 .btn-modern:hover {
   transform: translateY(-2px);
-  box-shadow: 0 8px 25px rgba(16, 185, 129, 0.4);
+  box-shadow: 0 8px 25px rgba(227, 49, 32, 0.4);
 }
 
 .btn-modern::before {

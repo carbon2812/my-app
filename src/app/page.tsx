@@ -43,19 +43,23 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center">
-              <h1 className="text-2xl font-bold gradient-text">HARIOM TRADERS</h1>
+              <img 
+                src="/Hariom Trader's.png Logo Transparent.png" 
+                alt="Hariom Traders Logo" 
+                className="h-12 w-auto"
+              />
             </div>
             
             <div className="hidden lg:block">
               <div className="ml-10 flex items-baseline align-left">
-                <Link href="/" className="text-gray-900 hover:text-green-600 px-3 py-2 rounded-md text-sm font-medium">Home</Link>
-                <Link href="/about" className="text-gray-700 hover:text-green-600 px-3 py-2 rounded-md text-sm font-medium">About Us</Link>
+                <Link href="/" className="text-gray-900 hover:text-red-600 px-3 py-2 rounded-md text-sm font-medium">Home</Link>
+                <Link href="/about" className="text-gray-700 hover:text-red-600 px-3 py-2 rounded-md text-sm font-medium">About Us</Link>
                 
                 {/* Products Dropdown */}
                 <div className="relative" onClick={(e) => e.stopPropagation()}>
                   <button
                     onClick={() => setIsProductsOpen(!isProductsOpen)}
-                    className="text-gray-700 hover:text-green-600 px-3 py-2 rounded-md text-sm font-medium flex items-center"
+                    className="text-gray-700 hover:text-red-600 px-3 py-2 rounded-md text-sm font-medium flex items-center"
                   >
                     Products
                     <svg className="ml-1 h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -65,11 +69,11 @@ export default function Home() {
                   {isProductsOpen && (
                     <div className="absolute top-full left-0 mt-1 w-48 bg-white rounded-md shadow-lg border">
                       <div className="py-1">
-                        <Link href="/products" className="block px-4 py-2 text-sm text-gray-700 hover:bg-green-50 hover:text-green-600">Residential</Link>
-                        <Link href="/products" className="block px-4 py-2 text-sm text-gray-700 hover:bg-green-50 hover:text-green-600">Commercial</Link>
-                        <Link href="/products" className="block px-4 py-2 text-sm text-gray-700 hover:bg-green-50 hover:text-green-600">Housing</Link>
-                        <Link href="/products" className="block px-4 py-2 text-sm text-gray-700 hover:bg-green-50 hover:text-green-600">Industrial</Link>
-                        <Link href="/products" className="block px-4 py-2 text-sm text-gray-700 hover:bg-green-50 hover:text-green-600">Ground Mounted</Link>
+                        <Link href="/products" className="block px-4 py-2 text-sm text-gray-700 hover:bg-green-50 hover:text-red-600">Residential</Link>
+                        <Link href="/products" className="block px-4 py-2 text-sm text-gray-700 hover:bg-green-50 hover:text-red-600">Commercial</Link>
+                        <Link href="/products" className="block px-4 py-2 text-sm text-gray-700 hover:bg-green-50 hover:text-red-600">Housing</Link>
+                        <Link href="/products" className="block px-4 py-2 text-sm text-gray-700 hover:bg-green-50 hover:text-red-600">Industrial</Link>
+                        <Link href="/products" className="block px-4 py-2 text-sm text-gray-700 hover:bg-green-50 hover:text-red-600">Ground Mounted</Link>
                       </div>
                     </div>
                   )}
@@ -79,7 +83,7 @@ export default function Home() {
                 <div className="relative" onClick={(e) => e.stopPropagation()}>
                   <button
                     onClick={() => setIsSolutionsOpen(!isSolutionsOpen)}
-                    className="text-gray-700 hover:text-green-600 px-3 py-2 rounded-md text-sm font-medium flex items-center"
+                    className="text-gray-700 hover:text-red-600 px-3 py-2 rounded-md text-sm font-medium flex items-center"
                   >
                     Solutions
                     <svg className="ml-1 h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -89,17 +93,17 @@ export default function Home() {
                   {isSolutionsOpen && (
                     <div className="absolute top-full left-0 mt-1 w-40 bg-white rounded-md shadow-lg border">
                       <div className="py-1">
-                        <Link href="/solutions" className="block px-4 py-2 text-sm text-gray-700 hover:bg-green-50 hover:text-green-600">On Grid</Link>
-                        <Link href="/solutions" className="block px-4 py-2 text-sm text-gray-700 hover:bg-green-50 hover:text-green-600">Off Grid</Link>
-                        <Link href="/solutions" className="block px-4 py-2 text-sm text-gray-700 hover:bg-green-50 hover:text-green-600">Hybrid</Link>
+                        <Link href="/solutions" className="block px-4 py-2 text-sm text-gray-700 hover:bg-green-50 hover:text-red-600">On Grid</Link>
+                        <Link href="/solutions" className="block px-4 py-2 text-sm text-gray-700 hover:bg-green-50 hover:text-red-600">Off Grid</Link>
+                        <Link href="/solutions" className="block px-4 py-2 text-sm text-gray-700 hover:bg-green-50 hover:text-red-600">Hybrid</Link>
                       </div>
                     </div>
                   )}
                 </div>
 
-                <Link href="/contact" className="text-gray-700 hover:text-green-600 px-3 py-2 rounded-md text-sm font-medium">Get Subsidy</Link>
-                <Link href="/testimonials" className="text-gray-700 hover:text-green-600 px-3 py-2 rounded-md text-sm font-medium">Testimonials</Link>
-                <Link href="/contact" className="text-gray-700 hover:text-green-600 px-3 py-2 rounded-md text-sm font-medium">Contact</Link>
+                <Link href="/contact" className="text-gray-700 hover:text-red-600 px-3 py-2 rounded-md text-sm font-medium">Get Subsidy</Link>
+                <Link href="/testimonials" className="text-gray-700 hover:text-red-600 px-3 py-2 rounded-md text-sm font-medium">Testimonials</Link>
+                <Link href="/contact" className="text-gray-700 hover:text-red-600 px-3 py-2 rounded-md text-sm font-medium">Contact</Link>
               </div>
             </div>
 
@@ -115,7 +119,7 @@ export default function Home() {
               {isClient ? (
                 <button
                   onClick={() => setIsMenuOpen(!isMenuOpen)}
-                  className="text-gray-700 hover:text-green-600 focus:outline-none focus:text-green-600"
+                  className="text-gray-700 hover:text-red-600 focus:outline-none focus:text-green-600"
                 >
                   <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
@@ -136,32 +140,32 @@ export default function Home() {
         {isClient && isMenuOpen && (
           <div className="lg:hidden">
             <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white shadow-lg">
-              <Link href="/" className="text-gray-900 hover:text-green-600 block px-3 py-2 rounded-md text-base font-medium">Home</Link>
-              <Link href="/about" className="text-gray-700 hover:text-green-600 block px-3 py-2 rounded-md text-base font-medium">About Us</Link>
+              <Link href="/" className="text-gray-900 hover:text-red-600 block px-3 py-2 rounded-md text-base font-medium">Home</Link>
+              <Link href="/about" className="text-gray-700 hover:text-red-600 block px-3 py-2 rounded-md text-base font-medium">About Us</Link>
               
               <div className="px-3 py-2">
                 <div className="text-gray-700 font-medium mb-2">Products</div>
                 <div className="ml-4 space-y-1">
-                  <Link href="/products" className="text-gray-600 hover:text-green-600 block px-3 py-1 rounded-md text-sm">Residential</Link>
-                  <Link href="/products" className="text-gray-600 hover:text-green-600 block px-3 py-1 rounded-md text-sm">Commercial</Link>
-                  <Link href="/products" className="text-gray-600 hover:text-green-600 block px-3 py-1 rounded-md text-sm">Housing</Link>
-                  <Link href="/products" className="text-gray-600 hover:text-green-600 block px-3 py-1 rounded-md text-sm">Industrial</Link>
-                  <Link href="/products" className="text-gray-600 hover:text-green-600 block px-3 py-1 rounded-md text-sm">Ground Mounted</Link>
+                  <Link href="/products" className="text-gray-600 hover:text-red-600 block px-3 py-1 rounded-md text-sm">Residential</Link>
+                  <Link href="/products" className="text-gray-600 hover:text-red-600 block px-3 py-1 rounded-md text-sm">Commercial</Link>
+                  <Link href="/products" className="text-gray-600 hover:text-red-600 block px-3 py-1 rounded-md text-sm">Housing</Link>
+                  <Link href="/products" className="text-gray-600 hover:text-red-600 block px-3 py-1 rounded-md text-sm">Industrial</Link>
+                  <Link href="/products" className="text-gray-600 hover:text-red-600 block px-3 py-1 rounded-md text-sm">Ground Mounted</Link>
                 </div>
               </div>
               
               <div className="px-3 py-2">
                 <div className="text-gray-700 font-medium mb-2">Solutions</div>
                 <div className="ml-4 space-y-1">
-                  <Link href="/solutions" className="text-gray-600 hover:text-green-600 block px-3 py-1 rounded-md text-sm">On Grid</Link>
-                  <Link href="/solutions" className="text-gray-600 hover:text-green-600 block px-3 py-1 rounded-md text-sm">Off Grid</Link>
-                  <Link href="/solutions" className="text-gray-600 hover:text-green-600 block px-3 py-1 rounded-md text-sm">Hybrid</Link>
+                  <Link href="/solutions" className="text-gray-600 hover:text-red-600 block px-3 py-1 rounded-md text-sm">On Grid</Link>
+                  <Link href="/solutions" className="text-gray-600 hover:text-red-600 block px-3 py-1 rounded-md text-sm">Off Grid</Link>
+                  <Link href="/solutions" className="text-gray-600 hover:text-red-600 block px-3 py-1 rounded-md text-sm">Hybrid</Link>
                 </div>
               </div>
 
-              <Link href="/contact" className="text-gray-700 hover:text-green-600 block px-3 py-2 rounded-md text-base font-medium">Get Subsidy</Link>
-              <Link href="/testimonials" className="text-gray-700 hover:text-green-600 block px-3 py-2 rounded-md text-base font-medium">Testimonials</Link>
-              <Link href="/contact" className="text-gray-700 hover:text-green-600 block px-3 py-2 rounded-md text-base font-medium">Contact</Link>
+              <Link href="/contact" className="text-gray-700 hover:text-red-600 block px-3 py-2 rounded-md text-base font-medium">Get Subsidy</Link>
+              <Link href="/testimonials" className="text-gray-700 hover:text-red-600 block px-3 py-2 rounded-md text-base font-medium">Testimonials</Link>
+              <Link href="/contact" className="text-gray-700 hover:text-red-600 block px-3 py-2 rounded-md text-base font-medium">Contact</Link>
               
               <div className="px-3 py-2">
                 <button className="w-full btn-modern text-sm">
@@ -175,7 +179,7 @@ export default function Home() {
 
       {/* Hero Section */}
       <section id="home" className="pt-16 relative min-h-screen flex items-center hero-modern">
-        <div className="absolute inset-0 bg-gradient-to-r from-teal-600 via-blue-600 to-purple-600 opacity-90 animate-gradient"></div>
+        <div className="absolute inset-0" style={{backgroundColor: '#4CB4F0', opacity: 0.9}}></div>
         <div className="absolute inset-0 bg-black opacity-30"></div>
         <div className="absolute inset-0 bg-cover bg-center bg-no-repeat" style={{backgroundImage: "url('https://images.unsplash.com/photo-1509391366360-2e959784a276?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80')"}}></div>
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
@@ -187,7 +191,7 @@ export default function Home() {
               </div>
               <h1 className="text-6xl lg:text-7xl font-bold mb-8 leading-tight animate-fadeInUp">
                 Power Your Life with <span className="gradient-text">Solar Energy</span>
-              </h1>
+          </h1>
               <p className="text-xl text-gray-200 mb-10 max-w-2xl leading-relaxed animate-fadeInUp">
                 Get free consultation and avail subsidy benefits upto ₹108000. Residential & Commercial Solar Solutions. On Grid, Off Grid & Hybrid Solar Systems.
               </p>
@@ -233,33 +237,42 @@ export default function Home() {
       </section>
 
       {/* Bar Running */}
-      <section className="py-6 bg-gradient-to-r from-green-500 via-emerald-500 to-teal-500 animate-gradient marquee-container">
+        <section className="py-6 animate-gradient marquee-container" style={{backgroundColor: '#EEFEF8'}}>
         <div className="marquee-content">
-          <div className="marquee-item text-white font-bold text-xl tracking-wider">
-            SOLAR POWER * RENEWABLE * FULL WARRANTY * ONE TIME INVESTMENT * LIFETIME RELIEF * ECO FRIENDLY *
+          <div className="marquee-item flex items-center justify-center">
+            <img src="/logos/Waaree-logo.png" alt="Waaree Solar" className="h-8 w-auto mx-4" />
           </div>
-          <div className="marquee-item text-white font-bold text-xl tracking-wider">
-            SOLAR POWER * RENEWABLE * FULL WARRANTY * ONE TIME INVESTMENT * LIFETIME RELIEF * ECO FRIENDLY *
+          <div className="marquee-item flex items-center justify-center">
+            <img src="/logos/tata-power-solar-logo.jpg" alt="Tata Power Solar" className="h-8 w-auto mx-4" />
           </div>
-          <div className="marquee-item text-white font-bold text-xl tracking-wider">
-            SOLAR POWER * RENEWABLE * FULL WARRANTY * ONE TIME INVESTMENT * LIFETIME RELIEF * ECO FRIENDLY *
+          <div className="marquee-item flex items-center justify-center">
+            <img src="/logos/LuminousLogoBlue.webp" alt="Luminous Solar" className="h-8 w-auto mx-4" />
           </div>
-          <div className="marquee-item text-white font-bold text-xl tracking-wider">
-            SOLAR POWER * RENEWABLE * FULL WARRANTY * ONE TIME INVESTMENT * LIFETIME RELIEF * ECO FRIENDLY *
+          <div className="marquee-item flex items-center justify-center">
+            <img src="/logos/sunora-logo-1.png" alt="Sunora Solar" className="h-8 w-auto mx-4" />
+          </div>
+          <div className="marquee-item flex items-center justify-center">
+            <img src="/logos/logoSolar.png" alt="Solar Logo" className="h-8 w-auto mx-4" />
+          </div>
+          <div className="marquee-item flex items-center justify-center">
+            <img src="/logos/images.png" alt="Solar Partner" className="h-8 w-auto mx-4" />
+          </div>
+          <div className="marquee-item flex items-center justify-center">
+            <img src="/logos/Untitled-design.png" alt="Solar Partner" className="h-8 w-auto mx-4" />
           </div>
         </div>
       </section>
 
       {/* Contact Us Section */}
-      <section id="contact" className="py-24 section-modern">
+      <section id="contact" className="py-24" style={{backgroundColor: '#4CB4F0'}}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12">
             <div className="animate-fadeInLeft">
               <div className="flex items-center mb-8">
                 <div className="w-4 h-4 bg-gradient-to-r from-green-500 to-emerald-500 transform rotate-45 mr-4 animate-pulse"></div>
-                <h2 className="text-3xl font-bold text-gray-800">CONTACT US</h2>
+                <h2 className="text-3xl font-bold text-white">CONTACT US</h2>
               </div>
-              <h3 className="text-5xl font-bold text-gray-900 mb-10 leading-tight">
+              <h3 className="text-5xl font-bold text-white mb-10 leading-tight">
                 Schedule a free consultation with us today
               </h3>
               
@@ -274,7 +287,7 @@ export default function Home() {
                   </svg>
                 </a>
                 <a href="#" className="w-16 h-16 card-modern rounded-2xl flex items-center justify-center hover:scale-110 transition-all duration-300 group">
-                  <svg className="w-8 h-8 text-green-500 group-hover:text-green-600" fill="currentColor" viewBox="0 0 24 24">
+                  <svg className="w-8 h-8 text-green-500 group-hover:text-red-600" fill="currentColor" viewBox="0 0 24 24">
                     <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.488"/>
                   </svg>
                 </a>
@@ -449,11 +462,11 @@ export default function Home() {
       </section>
 
       {/* Our Solutions Section */}
-      <section id="solutions" className="py-20 bg-gray-50">
+      <section id="solutions" className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <div className="inline-flex items-center px-4 py-2 bg-green-100 rounded-full text-sm font-medium mb-6">
-              <span className="w-2 h-2 bg-green-500 rounded-full mr-2"></span>
+            <div className="inline-flex items-center px-4 py-2 rounded-full text-sm font-medium mb-6" style={{backgroundColor: '#E33120', color: 'white'}}>
+              <span className="w-2 h-2 bg-white rounded-full mr-2"></span>
               OUR SOLUTIONS
             </div>
             <h2 className="text-4xl font-bold text-gray-900 mb-8">Comprehensive Solar Solutions</h2>
@@ -482,7 +495,7 @@ export default function Home() {
               <p className="text-gray-600 mb-6">
                 Off-grid solar systems give you complete energy independence by storing solar power in batteries for 24/7 use. Perfect for remote locations or areas with frequent power cuts, they ensure an uninterrupted electricity supply. Say goodbye to dependency on the main grid.
               </p>
-              <button className="text-gray-900 font-semibold hover:text-green-600 flex items-center">
+              <button className="text-gray-900 font-semibold hover:text-red-600 flex items-center">
                 Learn More
                 <svg className="ml-1 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
@@ -497,7 +510,7 @@ export default function Home() {
               <p className="text-gray-600 mb-6">
                 Hybrid solar systems combine the benefits of on-grid and off-grid technology. Store excess energy in batteries for backup while still enjoying grid connectivity when required. A reliable and cost-effective solution to ensure power even during outages.
               </p>
-              <button className="text-gray-900 font-semibold hover:text-green-600 flex items-center">
+              <button className="text-gray-900 font-semibold hover:text-red-600 flex items-center">
                 Learn More
                 <svg className="ml-1 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
@@ -509,12 +522,12 @@ export default function Home() {
       </section>
 
       {/* Why Choose Us */}
-      <section className="py-20 bg-white">
+      <section className="py-20" style={{backgroundColor: '#4CB4F0'}}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">WHY CHOOSE US</h2>
-            <h3 className="text-2xl font-semibold text-green-600 mb-8">Trusted By Thousands For Solar Solutions</h3>
-            <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+            <h2 className="text-4xl font-bold text-white mb-4">WHY CHOOSE US</h2>
+            <h3 className="text-2xl font-semibold text-white mb-8">Trusted By Thousands For Solar Solutions</h3>
+            <p className="text-lg text-white max-w-3xl mx-auto">
               We are dedicated to delivering reliable, affordable, and innovative solar energy solutions. Our team of experts brings years of experience.
             </p>
           </div>
@@ -639,12 +652,14 @@ export default function Home() {
           <div className="grid md:grid-cols-4 gap-8">
             {/* Company Info */}
             <div className="md:col-span-1">
-              <div className="flex items-center mb-4">
-                <div className="w-8 h-8 bg-green-500 rounded-lg flex items-center justify-center mr-3">
-                  <span className="text-white font-bold text-sm">H</span>
+                <div className="flex items-center mb-4">
+                  <img 
+                    src="/Hariom Trader's.png Logo Transparent.png" 
+                    alt="Hariom Traders Logo" 
+                    className="h-8 w-auto mr-3"
+                  />
+                  <h3 className="text-xl font-bold">HARIOM TRADERS</h3>
                 </div>
-                <h3 className="text-xl font-bold">HARIOM TRADERS</h3>
-              </div>
               <p className="text-gray-400 mb-6">
                 We're dedicated to helping you harness the power of the sun to create a sustainable future. Whether you're looking to reduce energy costs.
               </p>
