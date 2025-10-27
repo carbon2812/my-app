@@ -2,6 +2,8 @@
 
 import Link from 'next/link';
 import { useState } from 'react';
+import Navbar from '../../components/Navbar';
+import Footer from '../../components/Footer';
 
 export default function ContactPage() {
   const [formData, setFormData] = useState({
@@ -24,39 +26,7 @@ export default function ContactPage() {
 
   return (
     <div className="min-h-screen bg-white text-modern">
-      {/* Navigation */}
-      <nav className="nav-modern fixed w-full top-0 z-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-between items-center h-16">
-            <div className="flex items-center">
-              <Link href="/" className="flex items-center">
-                <img 
-                  src="/Hariom Trader's.png Logo Transparent.png" 
-                  alt="Hariom Traders Logo" 
-                  className="h-12 w-auto"
-                />
-              </Link>
-            </div>
-            
-            <div className="hidden lg:block">
-              <div className="ml-10 flex items-baseline space-x-6">
-                <Link href="/" className="text-gray-700 hover:text-green-600 px-3 py-2 rounded-md text-sm font-medium">Home</Link>
-                <Link href="/about" className="text-gray-700 hover:text-green-600 px-3 py-2 rounded-md text-sm font-medium">About Us</Link>
-                <Link href="/products" className="text-gray-700 hover:text-green-600 px-3 py-2 rounded-md text-sm font-medium">Products</Link>
-                <Link href="/solutions" className="text-gray-700 hover:text-green-600 px-3 py-2 rounded-md text-sm font-medium">Solutions</Link>
-                <Link href="/testimonials" className="text-gray-700 hover:text-green-600 px-3 py-2 rounded-md text-sm font-medium">Testimonials</Link>
-                <Link href="/contact" className="text-gray-900 hover:text-green-600 px-3 py-2 rounded-md text-sm font-medium">Contact</Link>
-              </div>
-            </div>
-
-            <div className="hidden lg:block">
-              <Link href="/contact" className="btn-modern text-sm">
-                Get Free Quote
-              </Link>
-            </div>
-          </div>
-        </div>
-      </nav>
+      <Navbar />
 
       {/* Hero Section */}
       <section className="pt-24 pb-20 hero-modern" style={{backgroundColor: '#4CB4F0'}}>
@@ -333,76 +303,7 @@ export default function ContactPage() {
         </div>
       </section>
 
-      {/* Footer */}
-      <footer className="bg-gray-900 text-white py-12">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid md:grid-cols-4 gap-8">
-            <div className="md:col-span-1">
-                  <div className="flex items-center mb-4">
-                    <img 
-                      src="/Hariom Trader's.png Logo Transparent.png" 
-                      alt="Hariom Traders Logo" 
-                      className="h-8 w-auto mr-3"
-                    />
-                    <h3 className="text-xl font-bold">HARIOM TRADERS</h3>
-                  </div>
-              <p className="text-gray-400 mb-6">
-                We're dedicated to helping you harness the power of the sun to create a sustainable future.
-              </p>
-            </div>
-
-            <div>
-              <h3 className="text-lg font-bold mb-6">Contact Us</h3>
-              <div className="space-y-4">
-                <div className="flex items-start">
-                  <svg className="w-5 h-5 text-gray-400 mr-3 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-                  </svg>
-                  <span className="text-gray-400">Pahariya, Varanasi, Ashok Vihar Colony, Near PF Office, Phase 1 (221007), Varanasi, Uttar Pradesh, India</span>
-                </div>
-                <div className="flex items-center">
-                  <svg className="w-5 h-5 text-gray-400 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
-                  </svg>
-                  <span className="text-gray-400">+91 87269 09990</span>
-                </div>
-                <div className="flex items-center">
-                  <svg className="w-5 h-5 text-gray-400 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                  </svg>
-                  <div className="text-gray-400">
-                    <div>hariomtraders407@gmail.com</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div>
-              <h3 className="text-lg font-bold mb-6">Quick Links</h3>
-              <div className="space-y-3">
-                <Link href="/" className="block text-gray-400 hover:text-white transition-colors">Home</Link>
-                <Link href="/about" className="block text-gray-400 hover:text-white transition-colors">About Us</Link>
-                <Link href="/products" className="block text-gray-400 hover:text-white transition-colors">Products</Link>
-                <Link href="/solutions" className="block text-gray-400 hover:text-white transition-colors">Solutions</Link>
-              </div>
-            </div>
-
-            <div>
-              <h3 className="text-lg font-bold mb-6">Products</h3>
-              <div className="space-y-3">
-                <Link href="/solutions" className="block text-gray-400 hover:text-white transition-colors">On Grid Solar</Link>
-                <Link href="/solutions" className="block text-gray-400 hover:text-white transition-colors">Off Grid Solar</Link>
-                <Link href="/solutions" className="block text-gray-400 hover:text-white transition-colors">Hybrid Solar</Link>
-              </div>
-            </div>
-          </div>
-
-          <div className="border-t border-gray-700 mt-8 pt-8 text-center">
-            <p className="text-gray-400">©Copyright 2025 HARIOM TRADERS. All rights reserved</p>
-          </div>
-        </div>
-      </footer>
+      <Footer />
     </div>
   );
 }

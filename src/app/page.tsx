@@ -415,20 +415,28 @@ export default function Home() {
       </section>
 
       {/* Ready to Go Solar? */}
-      <section className="py-24 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-5xl font-bold text-gray-900 mb-8">Ready to Go Solar?</h2>
-          <p className="text-xl text-gray-600 mb-10 max-w-3xl mx-auto">
+      <section 
+        className="py-24 relative bg-cover bg-center bg-no-repeat"
+        style={{
+          backgroundImage: 'url(https://images.unsplash.com/photo-1497435334941-8c899ee9e8e9?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80)'
+        }}
+      >
+        {/* Dark overlay for better text contrast */}
+        <div className="absolute inset-0  from-blue-900/80 via-orange-600/70 to-red-700/80"></div>
+        
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+          <h2 className="text-5xl font-bold text-white mb-8 drop-shadow-2xl">Ready to Go Solar?</h2>
+          <p className="text-xl text-white mb-10 max-w-3xl mx-auto drop-shadow-lg">
             Join thousands of satisfied customers who have made the switch to clean, renewable energy. Get your free quote today and start saving on your electricity bills.
           </p>
           <div className="flex flex-col sm:flex-row gap-6 justify-center">
-            <button className="btn-modern text-lg px-10 py-5 flex items-center justify-center">
+            <button className="bg-white text-red-600 hover:bg-red-600 hover:text-white text-lg px-10 py-5 flex items-center justify-center rounded-xl font-semibold shadow-2xl transition-all duration-300 transform hover:scale-105">
               Get Free Quote
               <svg className="ml-3 w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
               </svg>
             </button>
-            <Link href="/contact" className="btn-modern text-lg px-10 py-5 flex items-center justify-center bg-transparent border-2 border-red-600 text-red-600 hover:bg-red-600 hover:text-white">
+            <Link href="/contact" className="bg-transparent border-2 border-white text-white hover:bg-white hover:text-red-600 text-lg px-10 py-5 flex items-center justify-center rounded-xl font-semibold shadow-2xl transition-all duration-300 transform hover:scale-105">
               Contact Us Today
               <svg className="ml-3 w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
