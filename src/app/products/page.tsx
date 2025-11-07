@@ -97,7 +97,7 @@ export default function ProductsPage() {
 
       {/* Hero Section */}
       <section className="pt-24 pb-20 hero-modern" style={{backgroundColor: '#4CB4F0'}}>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-[9px]">
           <div className="text-center">
             
             <h1 className="text-6xl lg:text-7xl font-bold mb-8 leading-tight text-white animate-fadeInUp">
@@ -128,7 +128,7 @@ export default function ProductsPage() {
                 onClick={() => setActiveTab(category)}
                 className={`px-8 py-4 rounded-2xl font-semibold transition-all duration-300 ${
                   activeTab === category
-                    ? 'bg-gradient-to-r from-green-500 to-emerald-500 text-white shadow-lg transform scale-105'
+                    ? 'bg-red-600 text-white shadow-lg transform scale-105'
                     : 'bg-white text-gray-700 hover:bg-gray-50 border-2 border-gray-200'
                 }`}
               >
@@ -163,7 +163,7 @@ export default function ProductsPage() {
                     
                     <div className="flex items-center justify-between">
                       <div className="text-2xl font-bold text-green-600">{product.price}</div>
-                      <Link href="/contact" className="btn-modern">
+                      <Link href="/contact" className="btn-modern w-40 flex items-center justify-center">
                         Get Quote
                       </Link>
                     </div>
@@ -230,21 +230,35 @@ export default function ProductsPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-24 bg-gradient-to-r from-blue-500 to-blue-600">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-5xl font-bold text-white mb-8 leading-tight">
-            Ready to Choose Your Solar Solution?
-          </h2>
-          <p className="text-xl text-blue-100 mb-10 max-w-3xl mx-auto leading-relaxed">
-            Get a personalized quote for your solar installation. Our experts will help you choose the perfect solution for your needs.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-6 justify-center">
-            <Link href="/contact" className="btn-modern text-lg px-10 py-5">
-              Get Free Quote
-            </Link>
-            <Link href="/solutions" className="border-2 border-white text-white px-10 py-5 rounded-lg text-lg font-semibold hover:bg-white hover:text-blue-600 transition-colors">
-              View Solutions
-            </Link>
+      <section className="py-24">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div
+            className="relative rounded-3xl p-8 sm:p-12 lg:p-16 text-center overflow-hidden shadow-2xl"
+            style={{
+              backgroundImage: "url('https://images.unsplash.com/photo-1509391366360-2e959784a276?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80')",
+              backgroundSize: 'cover',
+              backgroundPosition: 'center',
+            }}
+          >
+            {/* dark overlay to ensure text readability */}
+            <div className="absolute inset-0 bg-black/45"></div>
+            <div className="absolute -top-16 -left-16 w-64 h-64 bg-white opacity-5 rounded-full filter blur-3xl"></div>
+            <div className="relative z-10">
+              <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-white mb-4">
+                Ready to Choose Your Solar Solution?
+              </h2>
+              <p className="text-lg sm:text-xl text-blue-100 mb-8 max-w-3xl mx-auto leading-relaxed">
+                Get a personalized quote for your solar installation. Our experts will help you choose the perfect solution for your needs.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center">
+                <Link href="/contact" className="inline-flex items-center justify-center bg-white text-blue-700 font-semibold px-8 py-3 rounded-lg shadow hover:scale-105 transition-transform">
+                  Get Free Quote
+                </Link>
+                <Link href="/solutions" className="inline-flex items-center justify-center border-2 border-white text-white px-6 py-3 rounded-lg font-semibold hover:bg-white hover:text-blue-600 transition-colors">
+                  View Solutions
+                </Link>
+              </div>
+            </div>
           </div>
         </div>
       </section>

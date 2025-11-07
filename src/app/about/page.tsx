@@ -12,9 +12,9 @@ export default function AboutPage() {
       {/* Hero Section */}
       <section className="pt-24 pb-20 hero-modern" style={{backgroundColor: '#4CB4F0'}}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center">
+          <div className="text-center padding-2" >
             
-            <h1 className="text-6xl lg:text-7xl font-bold mb-8 leading-tight text-white animate-fadeInUp padding-2">
+            <h1 className="text-6xl lg:text-7xl font-bold mb-8 leading-tight text-white animate-fadeInUp mt-[8px]">
               Experience The Power of The Sun at its <span className="gradient-text">Finest</span>
             </h1>
             <p className="text-xl text-gray-200 max-w-4xl mx-auto leading-relaxed animate-fadeInUp">
@@ -29,7 +29,7 @@ export default function AboutPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div className="animate-fadeInLeft">
-              
+             
               <h2 className="text-5xl font-bold text-gray-900 mb-8 leading-tight">
                 Pioneering Solar Excellence Since Day One
               </h2>
@@ -68,7 +68,8 @@ export default function AboutPage() {
       <section className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-                        <h2 className="text-5xl font-bold text-gray-900 mb-8 leading-tight">
+            
+            <h2 className="text-5xl font-bold text-gray-900 mb-8 leading-tight">
               What Drives Us Forward
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
