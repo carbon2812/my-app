@@ -74,10 +74,7 @@ export default function TestimonialsPage() {
       <section className="pt-24 pb-20 hero-modern" style={{backgroundColor: '#4CB4F0'}}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
-            <div className="inline-flex items-center px-6 py-3 glass rounded-full text-sm font-medium mb-8 animate-pulse-slow">
-              <span className="w-2 h-2 bg-white rounded-full mr-3 animate-pulse"></span>
-              TESTIMONIALS
-            </div>
+            
             <h1 className="text-6xl lg:text-7xl font-bold mb-8 leading-tight text-white animate-fadeInUp">
               Our Customers <span className="gradient-text">Speak For Us</span>
             </h1>
@@ -106,10 +103,7 @@ export default function TestimonialsPage() {
       <section className="py-24 section-modern">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <div className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-green-100 to-emerald-100 rounded-full text-sm font-medium mb-8">
-              <span className="w-3 h-3 bg-gradient-to-r from-green-500 to-emerald-500 rounded-full mr-3 animate-pulse"></span>
-              CUSTOMER REVIEWS
-            </div>
+           
             <h2 className="text-5xl font-bold text-gray-900 mb-8 leading-tight">
               What Our <span className="gradient-text">Customers Say</span>
             </h2>
@@ -184,10 +178,7 @@ export default function TestimonialsPage() {
       <section className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <div className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-green-100 to-emerald-100 rounded-full text-sm font-medium mb-8">
-              <span className="w-3 h-3 bg-gradient-to-r from-green-500 to-emerald-500 rounded-full mr-3 animate-pulse"></span>
-              VIDEO TESTIMONIALS
-            </div>
+           
             <h2 className="text-5xl font-bold text-gray-900 mb-8 leading-tight">
               See Our <span className="gradient-text">Customers</span> in Action
             </h2>
@@ -224,10 +215,7 @@ export default function TestimonialsPage() {
       <section className="py-24 section-modern">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <div className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-green-100 to-emerald-100 rounded-full text-sm font-medium mb-8">
-              <span className="w-3 h-3 bg-gradient-to-r from-green-500 to-emerald-500 rounded-full mr-3 animate-pulse"></span>
-              WHY CUSTOMERS TRUST US
-            </div>
+            
             <h2 className="text-5xl font-bold text-gray-900 mb-8 leading-tight">
               Building <span className="gradient-text">Trust</span> Through Excellence
             </h2>
