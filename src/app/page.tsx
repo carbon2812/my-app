@@ -62,14 +62,14 @@ export default function Home() {
         {/* Social Media Icons */}
         <div className="absolute left-6 top-1/2 transform -translate-y-1/2 z-20 hidden lg:block">
           <div className="flex flex-col space-y-4">
-            <a href="https://facebook.com/hariomtraderssolarenergy" className="w-12 h-12 glass rounded-full flex items-center justify-center hover:bg-white hover:text-gray-900 transition-all duration-300">
-              <img src="/logos/facebook.svg" alt="Facebook" className="w-7 h-7" />
+            <a href="https://facebook.com/hariomtraderssolarenergy" className="w-12 h-12 bg-gradient-to-r from-blue-500 to-blue-600 rounded-full flex items-center justify-center hover:from-blue-600 hover:to-blue-700 transform hover:scale-110 transition-all duration-300 shadow-lg">
+              <img src="/logos/facebook.svg" alt="Facebook" className="w-7 h-7 filter brightness-0 invert" />
             </a>
-            <a href="https://instagram.com/hariomtraderssolarenergy" className="w-12 h-12 glass rounded-full flex items-center justify-center hover:bg-white hover:text-gray-900 transition-all duration-300">
-              <img src="/logos/instagram.svg" alt="Instagram" className="w-7 h-7" />
+            <a href="https://instagram.com/hariomtraderssolarenergy" className="w-12 h-12 bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 rounded-full flex items-center justify-center hover:from-pink-600 hover:via-red-600 hover:to-yellow-600 transform hover:scale-110 transition-all duration-300 shadow-lg">
+              <img src="/logos/instagram.svg" alt="Instagram" className="w-7 h-7 filter brightness-0 invert" />
             </a>
-            <a href="https://youtube.com/@hariomtraderssolarenergy" className="w-12 h-12 glass rounded-full flex items-center justify-center hover:bg-white hover:text-gray-900 transition-all duration-300">
-              <img src="/logos/youtube.svg" alt="YouTube" className="w-7 h-7" />
+            <a href="https://youtube.com/@hariomtraderssolarenergy" className="w-12 h-12 bg-gradient-to-r from-red-500 to-red-600 rounded-full flex items-center justify-center hover:from-red-600 hover:to-red-700 transform hover:scale-110 transition-all duration-300 shadow-lg">
+              <img src="/logos/youtube.svg" alt="YouTube" className="w-7 h-7 filter brightness-0 invert" />
             </a>
           </div>
         </div>
