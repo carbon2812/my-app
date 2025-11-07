@@ -13,11 +13,8 @@ export default function AboutPage() {
       <section className="pt-24 pb-20 hero-modern" style={{backgroundColor: '#4CB4F0'}}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
-            <div className="inline-flex items-center px-6 py-3 glass rounded-full text-sm font-medium mb-8 animate-pulse-slow">
-              <span className="w-2 h-2 bg-white rounded-full mr-3 animate-pulse"></span>
-              ABOUT HARIOM TRADERS
-            </div>
-            <h1 className="text-6xl lg:text-7xl font-bold mb-8 leading-tight text-white animate-fadeInUp">
+            
+            <h1 className="text-6xl lg:text-7xl font-bold mb-8 leading-tight text-white animate-fadeInUp padding-2">
               Experience The Power of The Sun at its <span className="gradient-text">Finest</span>
             </h1>
             <p className="text-xl text-gray-200 max-w-4xl mx-auto leading-relaxed animate-fadeInUp">
@@ -32,10 +29,7 @@ export default function AboutPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div className="animate-fadeInLeft">
-              <div className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-green-100 to-emerald-100 rounded-full text-sm font-medium mb-8">
-                <span className="w-3 h-3 bg-gradient-to-r from-green-500 to-emerald-500 rounded-full mr-3 animate-pulse"></span>
-                OUR STORY
-              </div>
+              
               <h2 className="text-5xl font-bold text-gray-900 mb-8 leading-tight">
                 Pioneering Solar Excellence Since Day One
               </h2>
@@ -74,11 +68,7 @@ export default function AboutPage() {
       <section className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <div className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-green-100 to-emerald-100 rounded-full text-sm font-medium mb-8">
-              <span className="w-3 h-3 bg-gradient-to-r from-green-500 to-emerald-500 rounded-full mr-3 animate-pulse"></span>
-              OUR VALUES
-            </div>
-            <h2 className="text-5xl font-bold text-gray-900 mb-8 leading-tight">
+                        <h2 className="text-5xl font-bold text-gray-900 mb-8 leading-tight">
               What Drives Us Forward
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
@@ -130,10 +120,7 @@ export default function AboutPage() {
       <section className="py-24 section-modern">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <div className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-green-100 to-emerald-100 rounded-full text-sm font-medium mb-8">
-              <span className="w-3 h-3 bg-gradient-to-r from-green-500 to-emerald-500 rounded-full mr-3 animate-pulse"></span>
-              OUR TEAM
-            </div>
+           
             <h2 className="text-5xl font-bold text-gray-900 mb-8 leading-tight">
               Meet Our <span className="gradient-text">Expert Team</span>
             </h2>

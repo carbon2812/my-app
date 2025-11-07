@@ -306,10 +306,7 @@ export default function Home() {
               <div className="absolute inset-0 bg-gradient-to-br from-transparent to-black opacity-20 rounded-3xl"></div>
             </div>
             <div className="animate-fadeInRight">
-            <div className="inline-flex items-center px-5 py-2.5 rounded-full text-sm font-medium mb-8" style={{backgroundColor: '#E33120', color: 'white'}}>
-              <span className="w-2 h-2 bg-white rounded-full mr-3"></span>
-              About us
-            </div>
+            
               <h2 className="text-5xl font-bold text-gray-900 mb-8 leading-tight">
                 Experience The Power of The Sun at its <span className="gradient-text">Finest</span>
               </h2>
@@ -318,19 +315,19 @@ export default function Home() {
               </p>
               <div className="grid grid-cols-2 gap-8 mb-10">
                 <div className="text-center">
-                  <div className="text-4xl font-bold text-green-600 mb-2">500+</div>
+                  <div className="text-4xl font-bold text-red-600 mb-2">500+</div>
                   <div className="text-gray-600">Projects Completed</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-4xl font-bold text-green-600 mb-2">25+</div>
+                  <div className="text-4xl font-bold text-red-600 mb-2">25+</div>
                   <div className="text-gray-600">Years Experience</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-4xl font-bold text-green-600 mb-2">1000+</div>
+                  <div className="text-4xl font-bold text-red-600 mb-2">1000+</div>
                   <div className="text-gray-600">Happy Customers</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-4xl font-bold text-green-600 mb-2">100%</div>
+                  <div className="text-4xl font-bold text-red-600 mb-2">100%</div>
                   <div className="text-gray-600">Satisfaction Rate</div>
                 </div>
               </div>
@@ -350,10 +347,7 @@ export default function Home() {
       <section id="testimonials" className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <div className="inline-flex items-center px-5 py-2.5 rounded-full text-sm font-medium mb-6" style={{backgroundColor: '#E33120', color: 'white'}}>
-              <span className="w-2 h-2 bg-white rounded-full mr-3"></span>
-              TESTIMONIALS
-            </div>
+            
             <h2 className="text-5xl font-bold text-gray-900 mb-4">What Our Customers Say</h2>
             <p className="text-lg text-gray-600">Real experiences from homeowners and businesses who chose solar with us.</p>
           </div>
@@ -426,10 +420,7 @@ export default function Home() {
       <section id="solutions" className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-20">
-            <div className="inline-flex items-center px-5 py-2.5 rounded-full text-sm font-medium mb-8" style={{backgroundColor: '#E33120', color: 'white'}}>
-              <span className="w-2 h-2 bg-white rounded-full mr-3"></span>
-              OUR SOLUTIONS
-            </div>
+            
             <h2 className="text-5xl font-bold text-gray-900 mb-6">Comprehensive Solar Solutions</h2>
           </div>
 
