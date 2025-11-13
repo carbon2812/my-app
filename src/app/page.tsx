@@ -29,27 +29,13 @@ export default function Home() {
       <Navbar />
       
       {/* Hero Section */}
-      <section id="home" className="pt-16 relative min-h-screen flex items-center hero-modern">
-        <div className="absolute inset-0" style={{backgroundColor: '#4CB4F0', opacity: 0.9}}></div>
-        <div className="absolute inset-0 bg-black opacity-30"></div>
-        <div className="absolute inset-0 bg-cover bg-center bg-no-repeat" style={{backgroundImage: "url('https://images.unsplash.com/photo-1509391366360-2e959784a276?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80')"}}></div>
+      <section id="home" className="pt-16 relative min-h-screen flex items-center hero-modern" style={{height: '100vh', overflow: 'hidden'}}>
+        <div className="absolute inset-0" style={{backgroundColor: '#4CB4F0', opacity: 0.5}}></div>
+        <div className="absolute inset-0 bg-black opacity-20"></div>
+        <div className="absolute inset-0 w-full h-full" style={{backgroundImage: "url('/HT Web Temp.png')", backgroundSize: 'contain', backgroundPosition: 'center', backgroundRepeat: 'no-repeat'}}></div>
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div className="text-white animate-fadeInLeft">
-              
-              <h1 className="text-6xl lg:text-7xl font-bold mb-8 leading-tight animate-fadeInUp">
-                Power Your Life with <span className="gradient-text">Solar Energy</span>
-          </h1>
-              <p className="text-xl text-gray-200 mb-10 max-w-2xl leading-relaxed animate-fadeInUp">
-                Get free consultation and avail subsidy benefits upto ₹108000. Residential & Commercial Solar Solutions. On Grid, Off Grid & Hybrid Solar Systems.
-              </p>
-              <button className="btn-modern text-lg px-10 py-5 flex items-center animate-fadeInUp">
-                Get Started
-                <svg className="ml-3 w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
-                </svg>
-              </button>
-            </div>
+            
             <div className="hidden lg:block animate-fadeInRight">
               <div className="relative animate-float">
                 <div className="w-full h-96 bg-cover bg-center rounded-3xl shadow-modern-lg" style={{backgroundImage: "url('/solar%20image.jpg')"}}></div>
