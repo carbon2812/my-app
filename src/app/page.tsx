@@ -30,9 +30,25 @@ export default function Home() {
       
       {/* Hero Section */}
       <section id="home" className="pt-16 relative min-h-screen flex items-center hero-modern" style={{height: '100vh', overflow: 'hidden'}}>
-        <div className="absolute inset-0" style={{backgroundColor: '#4CB4F0', opacity: 0.5}}></div>
-        <div className="absolute inset-0 bg-black opacity-20"></div>
-        <div className="absolute inset-0 w-full h-full" style={{backgroundImage: "url('/HT Web Temp.png')", backgroundSize: 'contain', backgroundPosition: 'center', backgroundRepeat: 'no-repeat'}}></div>
+        {/* Video Background */}
+        <video 
+          autoPlay 
+          muted 
+          loop 
+          playsInline
+          preload="auto"
+          poster="/solar-poster.jpg"
+          className="absolute inset-0 w-full h-full object-cover"
+          style={{position: 'absolute', top: 0, left: 0}}
+        >
+          <source src="/hero-video1.mp4" type="video/mp4" />
+          <source src="/hero-video2.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+        
+        <div className="absolute inset-0" style={{backgroundColor: '#4CB4F0', opacity: 0.3}}></div>
+        <div className="absolute inset-0 bg-black opacity-25"></div>
+        
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             
